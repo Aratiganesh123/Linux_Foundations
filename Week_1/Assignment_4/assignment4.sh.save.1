@@ -1,0 +1,13 @@
+su!/bin/bash
+
+#get the Cartesian x and y coodinates of a point that are passed as arguments
+x=$1
+y=$2
+x_square=`expr $x \* $x`
+y_square=`expr $y \* $y`
+root=sqrt(`expr $x_square + $y_square`)  
+echo "$root`"
+#convert the Cartesian coordinates to the corresponding polar coordinates
+#compute radius and theta (in degrees) upto 5 decimal places
+#note: theta should range from 0 to 360 degrees
+
